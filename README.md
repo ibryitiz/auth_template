@@ -1,16 +1,74 @@
-# auth_template
+# Auth Template
 
-Auth Template 17-02-2025
+Modern ve özelleştirilebilir bir Flutter authentication uygulaması.
 
-## Getting Started
+## 🚀 Özellikler
 
-This project is a starting point for a Flutter application.
+- 🔐 Firebase Authentication entegrasyonu
+- 🎨 Modern ve özelleştirilebilir UI
+- 📱 Responsive tasarım
+- ✨ Clean Architecture
+- 🛡️ SOLID prensipleri
+- ✅ Form validasyonları
+- ❌ Hata yönetimi
 
-A few resources to get you started if this is your first Flutter project:
+## 📱 Ekranlar
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- 🔑 Login Screen
+- 📝 Register Screen
+- 🔄 Password Reset Screen
+- 👤 Profile Screen
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🛠️ Kullanılan Teknolojiler
+
+- Flutter & Dart
+- Firebase Authentication
+- Clean Architecture
+- SOLID Principles
+- Custom UI Components
+
+## 🚀 Kurulum
+
+1. **Flutter Kurulumu**
+
+bash
+flutter pub get
+*
+
+2. **Firebase Kurulumu**
+- Firebase Console'dan yeni proje oluşturun
+- google-services.json ve GoogleService-Info.plist dosyalarını ekleyin
+- Firebase paketlerini aktifleştirin
+
+3. **Uygulamayı Çalıştırma**
+
+bash
+flutter run
+
+## 📁 Proje Yapısı
+lib/
+├── core/ # Temel bileşenler
+├── features/ # Özellik modülleri
+│ ├── auth/ # Authentication modülü
+│ └── profile/ # Profil modülü
+├── shared/ # Paylaşılan bileşenler
+└── main.dart # Giriş noktası
+
+## 🤝 Katkıda Bulunma
+
+1. Bu repository'yi fork edin
+2. Feature branch'i oluşturun (`git checkout -b feature/amazing-feature`)
+3. Değişikliklerinizi commit edin (`git commit -m 'feat: Add amazing feature'`)
+4. Branch'inizi push edin (`git push origin feature/amazing-feature`)
+5. Pull Request oluşturun
+
+## 📝 Lisans
+
+Bu proje MIT lisansı altında lisanslanmıştır. Detaylar için [LICENSE](LICENSE) dosyasına bakın.
+
+## 👥 İletişim
+
+İbrahim YİTİZ - [@ibryitiz](https://github.com/ibryitiz)
+
+Proje Linki: [https://github.com/ibryitiz/auth_template](https://github.com/ibryitiz/auth_template)
+
