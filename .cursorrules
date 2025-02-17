@@ -1,0 +1,54 @@
+I am building a Flutter package that provides authentication UI and Firebase authentication services following Clean Code and SOLID principles.
+
+### **Project Concept:**
+- The package provides reusable authentication UI and Firebase authentication.
+- It does NOT include state management; it only uses callback functions.
+- It should be modular, allowing easy customization.
+- UI components (buttons, text fields) should be customizable and reusable.
+- It should separate business logic from UI code.
+- Error handling and validation should be centralized.
+
+### **Required Code Improvements:**
+1. **Apply SOLID Principles:**
+   - Ensure Single Responsibility Principle (SRP) is followed.
+   - Move Firebase authentication logic to `auth_service.dart`.
+   - Ensure UI screens do not contain business logic.
+
+2. **Modular File Structure:**
+   - Move UI components to `components/` (Buttons, TextFields).
+   - Move Firebase authentication logic to `services/`.
+   - Centralize validation functions in `utils/validation.dart`.
+   - Centralize error handling functions in `utils/error_handler.dart`.
+
+3. **Code Readability & Clean Code Standards:**
+   - Remove unnecessary `else` statements; prefer early returns.
+   - Replace `print()` statements with a structured error-handling approach.
+   - Ensure meaningful variable and function names.
+
+4. **No State Management, Only Callbacks:**
+   - `LoginScreen` and `RegisterScreen` should NOT manage state.
+   - They should accept callback functions for authentication.
+
+### **Final Task for Cursor AI:**
+- Refactor the code according to the above rules.
+- Ensure that all files follow Clean Code and SOLID principles.
+- Remove any state management dependencies.
+- Optimize error handling and validation functions.
+
+Expected final project structure:
+
+/ribra_tech_auth_template
+  ├── lib/
+  │   ├── components/          # 📌 UI Bileşenleri
+  │   │   ├── custom_textfield.dart
+  │   │   ├── custom_button.dart
+  │   ├── screens/             # 📌 Authentication UI Sayfaları
+  │   │   ├── login_screen.dart
+  │   │   ├── register_screen.dart
+  │   ├── utils/               # 📌 Yardımcı Fonksiyonlar
+  │   │   ├── validation.dart  # ✅ Validation işlemleri
+  │   │   ├── error_handler.dart  # ✅ Hata yönetimi
+  │   ├── services/            # 📌 Firebase Authentication Servisi
+  │   │   ├── auth_service.dart
+  │   ├── ribra_tech_auth_template.dart  # 📌 Ana giriş noktası
+
